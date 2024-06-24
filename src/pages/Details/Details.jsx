@@ -87,7 +87,7 @@ export default function Details() {
             >
               <span className="mr-2">
                 <IoIosArrowRoundBack
-                  className={`${darkTheme ? "text-white" : "text-dark-gray"}  `}
+                  className={`${darkTheme ? "text-white" : "text-dark-gray"}`}
                 />
               </span>
               Back
@@ -101,7 +101,7 @@ export default function Details() {
           <img
             src={country.flags.svg}
             alt={country.name.common}
-            className="rounded-lg w-full"
+            className="rounded-lg w-full h-40 object-cover mb-1"
           />
         </div>
 
