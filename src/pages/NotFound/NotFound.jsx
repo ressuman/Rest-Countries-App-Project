@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../context/Theme/themeContext";
 import { useContext } from "react";
-import NotFound from "../../assets/images/page_not_found.svg";
+import NotFoundImage from "../../assets/images/page_not_found.svg";
 
-export const Error = () => {
+export const NotFound = () => {
   const { darkTheme } = useContext(ThemeContext);
 
   return (
@@ -26,7 +26,7 @@ export const Error = () => {
       </Link>
       <div className="mt-8">
         <img
-          src={NotFound}
+          src={NotFoundImage}
           alt="404 Illustration"
           className="max-w-full h-44"
         />

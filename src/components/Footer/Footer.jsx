@@ -4,6 +4,8 @@ import { ThemeContext } from "../../context/Theme/themeContext";
 export const Footer = () => {
   const { darkTheme } = useContext(ThemeContext);
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <div>
       <footer
@@ -15,7 +17,7 @@ export const Footer = () => {
       >
         <div className="container mx-auto grid grid-cols-1 gap-4 md:flex justify-between items-center px-4">
           <p className="text-base">
-            &copy; 2024 Richard Essuman. All rights reserved.
+            &copy; {currentYear} Richard Essuman. All rights reserved.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-3">
             <a
