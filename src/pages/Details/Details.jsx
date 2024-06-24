@@ -101,7 +101,7 @@ export default function Details() {
           <img
             src={country.flags.svg}
             alt={country.name.common}
-            className="rounded-lg w-full h-40 object-cover mb-1"
+            className="rounded-lg w-full  object-cover mb-1"
           />
         </div>
 
